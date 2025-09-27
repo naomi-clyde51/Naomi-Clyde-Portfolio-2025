@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
     --background-color: #1B1330;
@@ -14,7 +15,7 @@
 body {
 background-color: var(--background-color);
 margin: 0px;
-padding: 0px;
+padding: 10px;
 font-family: "Anonymous Pro", monospace;
 }
 
@@ -23,13 +24,62 @@ nav {
     justify-content: center;
 }
 
-header {
-    color: var(--text-color);
+.nav-link {
     text-align: center;
-    padding-bottom: 30px;
-    margin: 50px 200px 15px 200px;
-        padding: 20px;
-        line-height: 0.5;
+    margin-top: 20px; 
+    padding: 18px 26px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 24px;
+    border: 2px solid var(--primary-color);
+}
+
+header {
+    padding: 40px 40px 150px 40px;
+    margin: 30px 200px 200px 200px;
+    line-height: 0.5;
+    color: var(--text-color);
+}
+
+h1 {
+    color: var(--text-color);
+    font-size: 84px;
+    font-weight: 600;
+}
+
+h2 {
+    color: var(--text-color);
+    font-size: 55px;
+    font-weight: 600;
+}
+
+header h1 {
+    text-align: center;
+    margin: 30px 30px 45px 30px;
+    padding: 20px;
+}
+
+header h2 {
+    text-align: center;
+    margin: 30px 30px 120px 30px;
+    padding: 20px;
+}
+
+.homepg-contactbtn {
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    margin:200px 300px 200px 500px;
+    padding: 45px;
+    border-radius: 27px;
+    border: 4px solid var(--primary-color);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-size: 32px;
+}
+
+.homepg-contactbtn:hover {
+    border: 4px solid var(--secondary-color);
 }
 
 .typewriter {
@@ -48,7 +98,7 @@ animation: typing 1.5s steps(17) forwards, blink 1s step-end infinite;
     }
 
     to {
-        width: 41.75%;
+        width: 48%;
     }
 }
 
@@ -58,72 +108,51 @@ animation: typing 1.5s steps(17) forwards, blink 1s step-end infinite;
     }
 }
 
-h1, .fa-brands {
-    color: var(--text-color);
-    font-size: 84px;
-    font-weight: 600;
-}
-
-header h2 {
-    font-size: 55px;
-        font-weight: 600;
-        margin: 30px;
-}
-
 a:hover {
     border: 2px solid var(--secondary-color);
-    color: var(--text-color)
 }
 
-.nav-link {
-    box-sizing: border-box;
-    text-align: center;
-    margin-top: 20px; 
-    padding: 18px 26px;
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 24px;
-    border: 2px solid var(--primary-color);
+main {
+    margin: 30px;
+    padding: 20px;
 }
 
-.homepg-contactbtn {
-    box-sizing: border-box;
-    max-width: 274px;
-    margin-top: 40px;
-    padding: 45px;
-    border-radius: 27px;
-    border: 4px solid var(--primary-color);
-    color: var(--text-color);
-    background-color: var(--background-color);
-    align-items: center;
-    font-size: 32px;
-}
-
-.homepg-contactbtn:hover {
-    border: 4px solid var(--secondary-color);
+#home-contact {
+    margin: 20px;
+    padding: 20px;
 }
 
 #home-contact h1 {
     text-align: center;
+    margin: 15px;
+padding: 15px;
 }
 
 p {
     color: var(--text-color);
 }
 
+.contact-boxes {
+    margin: 20px 300px;
+    padding: 20px;
+
+}
+
 .contact-box-thankyou, .contact-box-form {
     border: 1px solid var(--primary-color);
     background-color: var(--background-color);
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .contact-box-thankyou {
-    margin-left: 243px;
+    margin-left: 50px;
 width: 408px;
 height: 291px;
 }
 
 .contact-box-form {
-    margin-left: 587px;
+    margin-left: 400px;
 width: 408px;
   height: 440px;
 }
@@ -136,14 +165,30 @@ form {
 background-color: var(--background-color);
 }
 
+.phone-info, .email-info {
+border: solid 1px var(--primary-color);
+}
+
 .social-media {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
 }
 
+.fa-brands {
+    color:white;
+}
+
+footer {
+
+    margin: 20px 0px 20px 0px;
+    padding: 20px;
+}
+
 footer p {
+    font-family: "Inter", sans-serif;
     display: flex;
     justify-content: center;
     font-size: 12px;
+    font-weight:normal;
 }

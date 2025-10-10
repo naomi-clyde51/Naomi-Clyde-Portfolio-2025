@@ -2,58 +2,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --background-color: #1B1330;
+    --background-color: #19112f;
     --primary-color: #7D66FF;
-    --secondary-color: #D77BFF;
+    --secondary-color: #e46bff;
     --text-color: #fff;
 }
+
+/*Main CSS*/
 
 .hide-underline {
     text-decoration: none;
 }
 
+.text-center {
+text-align: center;
+}
+
+.text-color {
+
+    color: var(--text-color);
+}
+
 body {
-background-color: var(--background-color);
-margin: 0px;
-padding: 10px;
-font-family: "Anonymous Pro", monospace;
+    background-color: var(--background-color);
+    margin: 0px;
+    padding: 0px;
+    font-family: "Anonymous Pro", monospace;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-        justify-content: space-evenly;
-    margin: 30px;
-}
-
-.nav-link {
-    text-align: center;
-    padding: 40px 26px;
-    width: 249px;
-    height: 137px;
+h1,
+h2, h3 {
     color: var(--text-color);
-    text-decoration: none;
-    font-size: 32px;
-    border: 2px solid var(--primary-color);
-}
+    font-weight: 600;
 
-header {
-    padding: 40px 40px 150px 40px;
-    margin: 30px 200px 200px 200px;
-    line-height: 0.5;
-    color: var(--text-color);
 }
 
 h1 {
-    color: var(--text-color);
     font-size: 84px;
-    font-weight: 600;
 }
 
 h2 {
-    color: var(--text-color);
     font-size: 55px;
-    font-weight: 600;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+/* Nav */
+
+.nav-link {
+width: 13rem;
+    height: 6rem;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 32px;
+    border: 3px solid var(--primary-color);
+}
+
+.nav-link:hover {
+    color:var(--text-color);
+}
+
+/* Header + Hero */
+
+header {
+    /*padding: 40px 40px 150px 40px;
+    margin: 30px 200px 200px 200px;*/
+    line-height: 0.5;
+    color: var(--text-color);
 }
 
 header h1 {
@@ -68,11 +85,71 @@ header h2 {
     padding: 20px;
 }
 
-.homepg-contactbtn {
+.typewriter {
+    margin-inline: auto;
+    padding: 2px 0px 4px 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2.5px solid;
+    color: var(--secondary-color);
+    animation: typing 1.5s steps(17) forwards, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 36%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.header__about {
+    display: flex;
+}
+
+/* Main */
+
+main {
+    margin: 30px;
+    padding: 20px;
+}
+
+a:hover {
+    border: 2px solid var(--secondary-color);
+}
+
+.btn-outline-custom {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.cta:hover {
+    list-style-type: none;
+}
+
+/* Home -- Featured Projects*/
+
+/* CTA */
+
+/*.btn-outline-primary {
+    display: flex;
+    justify-content: center;
+    border: solid 2px white;
+}*/
+
+/* Contact CTA */
+
+/*.homepg-contactbtn {
     text-align: center;
-    align-items: center;
     width: 100px;
-    margin: 200px 300px 200px 475px;
     padding: 45px;
     border-radius: 27px;
     border: 4px solid var(--primary-color);
@@ -83,42 +160,14 @@ header h2 {
 
 .homepg-contactbtn:hover {
     border: 4px solid var(--secondary-color);
-}
+}*/
 
-.typewriter {
-margin-inline: auto;
-padding: 2px 0px 4px 0px;
-overflow: hidden;
-white-space: nowrap;
-border-right: 2.5px solid;
-color: var(--secondary-color);
-animation: typing 1.5s steps(17) forwards, blink 1s step-end infinite;
-}
+/* Services Page */
 
-@keyframes typing {
-    from {
-        width: 0%;
-    }
 
-    to {
-        width: 48%;
-    }
-}
+/* Resume Page */
 
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
-
-a:hover {
-    border: 2px solid var(--secondary-color);
-}
-
-main {
-    margin: 30px;
-    padding: 20px;
-}
+/* Contact page */
 
 #home-contact {
     margin: 20px;
@@ -131,9 +180,6 @@ main {
 padding: 15px;
 }
 
-p {
-    color: var(--text-color);
-}
 
 .contact-boxes {
     margin: 20px 250px 20px 300px;
@@ -191,6 +237,8 @@ color: var(--text-color);
 border: solid 1px var(--primary-color);
 }
 
+/* Footer */
+
 .social-media {
     display: flex;
     justify-content: center;
@@ -201,15 +249,23 @@ border: solid 1px var(--primary-color);
 }
 
 footer {
-
-    margin: 20px 0px 20px 0px;
-    padding: 20px;
+background-color: #000;
+margin: 20px 0px 0px 0px;
+padding: 20px;
 }
 
 footer p {
+    color: var(--text-color);
     font-family: "Inter", sans-serif;
     display: flex;
     justify-content: center;
     font-size: 12px;
     font-weight:normal;
+}
+
+.back-to-top-btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: white;
 }

@@ -24,112 +24,198 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <title>Naomi Clyde</title>
+    <title>Naomi Clyde - Front End Development - Graphic Designer</title>
   </head>
   <body>
-    <nav class="text-center">
-      <div class="row">
-        <div class="col-md-3">
-          <a class="hide-underline nav-link" href="/">Home</a>
-        </div>
-        <div class="col-md-3">
-          <a class="hide-underline nav-link" href="About.html">About</a>
-        </div>
-        <div class="col-md-3">
-          <a class="hide-underline nav-link" href="Projects.html">Projects</a>
-        </div>
-        <div class="col-md-3">
-          <a class="hide-underline nav-link" href="resume.html">Resume</a>
-        </div>
-      </div>
-    </nav>
-    <header>
+    <ul
+      id="nav"
+      class="nav justify-content-center text-center text-wrap text-color"
+    >
+      <li class="nav-item m-3">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item m-3">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item m-3">
+        <a class="nav-link" href="services.html">Services</a>
+      </li>
+      <li class="nav-item m-3">
+        <a class="nav-link" href="resume.html">Resume</a>
+      </li>
+      <li class="nav-item m-3">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+    <header id="header" class="justify-content-center m-5">
+      <!-- Hero Section -->
       <h1>
         Hi, I’m
         <div class="typewriter">Naomi Clyde.</div>
       </h1>
-      <h2>
-        Front-End Developer<!--, Graphic Designer,-->
-        | Digital Illustrator
-      </h2>
-      <a class="hide-underline homepg-contactbtn" href="#home-contact">
-        Contact Me
-      </a>
+      <h2>Front-End Developer | Graphic Designer</h2>
     </header>
 
     <main>
-      <section id="home-contact">
-        <h1>
-          Let's
-          <span style="color: var(--secondary-color)">create</span> together!
-        </h1>
-        <div class="contact-boxes">
-          <div class="contact-box-thankyou p-4">
-            <p>
-              Thank you for visiting my website! If you’re interested in adding
-              me or have additional questions/concerns, you can shoot me an
-              email!
-            </p>
-          </div>
+      <!-- Featured Projects -->
+      <section
+        id="main__featured-projects"
+        class="justify-content-left text-color m-5"
+      >
+        <h2>Featured Projects</h2>
 
-          <!--Form to be implemented later !!!-->
-          <!--<div class="contact-box-form p-4">
-            <form action="">
-              <label for="fname">First name:</label><br />
-              <input type="text" id="fname" name="fname" /><br />
-              <label for="lname">Last name:</label><br />
-              <input type="text" id="lname" name="lname" /> <br />
-              <label for="email">Email:</label><br />
-              <input type="text" id="email" name="email" />
-              <br />
-              <label for="subject">Subject:</label><br />
-              <input type="text" id="subject" name="subject" />
-              <br />
-              <label for="message">Message:</label> <br />
-              <textarea name="message" rows="8" cols="48"></textarea><br />
-              <br />
-              <input type="submit" value="Let's connect!" />
-            </form>
-          </div>-->
-
-          <div class="contact-box-form p-4 text-center">
-            <div class="row-sm-2">
-              <div class="col p-4 mt-4 me-4 mb-2 ms-4">
-                <p>Cel:</p>
-                <p><strong>+1 (516) 960-8708</strong></p>
+        <!-- Web Projects -->
+        <div class="container__main--projectlist mt-4">
+          <!-- Web Project 1 -->
+          <div class="row__main--projectlist01 d-flex justify-content-center">
+            <div class="row main__featured-project01">
+              <div class="card" style="width: 30rem">
+                <a href="contact.html">
+                  <img src="..." class="card-img-top" alt="..." />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Project 1</h5>
+                </div>
               </div>
             </div>
-            <div class="row-sm-2">
-              <div class="col p-4 mt-2 me-4 mb-2 ms-4">
-                <p>Email: <strong>naomi.clyde52@gmail.com</strong></p>
+            <!-- Web Project 2 -->
+            <div class="main__featured-project02">
+              <div class="card" style="width: 30rem">
+                <a href="contact.html">
+                  <img src="..." class="card-img-top" alt="..." />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Project 2</h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- Graphic Projects -->
+          </div>
+          <!-- Graphic Project 1 -->
+          <div
+            class="row__main--projectlist02 d-flex justify-content-center mt-3"
+          >
+            <div class="main__featured-project03">
+              <div class="card" style="width: 30rem">
+                <a href="">
+                  <img src="..." class="card-img-top" alt="..." />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Project 3</h5>
+                </div>
+              </div>
+            </div>
+            <div class="main__featured-project03">
+              <div class="card" style="width: 30rem">
+                <a href="">
+                  <img src="..." class="card-img-top" alt="..." />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Project 4</h5>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <br />
-        <br />
-        <!--Contact info boxes to be implemented later !!!-->
-        <!--<div class="row contact-info">
-          <div class="phone-info col-4 p-3 m-2">
-            <p>Cel:</p>
-            <p><strong>+1 (516) 960-8708</strong></p>
+
+        <!-- CTA to Projects Pg -->
+        <div class="main__projects text-center m-5">
+          <h3>See more of my projects</h3>
+          <a class="cta" href="services.html">
+            <button type="button" class="btn btn-outline-custom btn-lg m-4">
+              Projects
+            </button>
+          </a>
+        </div>
+
+        <!-- CTA to Contact Me Pg -->
+        <section id="main__contactCTA text-center m-5">
+          <div class="main__contactCTA text-center">
+            <h2>Like what you see? Contact me</h2>
+            <a class="cta" href="contact.html">
+              <button type="button" class="btn btn-outline-custom btn-lg m-4">
+                Contact Me
+              </button>
+            </a>
           </div>
-          <div class="email-info col-4 p-3 m-2">
-            <p>Email:</p>
-            <p><strong>naomi.clyde52@gmail.com</strong></p>
-          </div>
-        </div>-->
+        </section>
       </section>
     </main>
     <br />
     <hr />
     <footer>
-      <div class="social-media">
-        <p class="fa-brands fa-square-linkedin"></p>
-        <p class="fa-brands fa-github"></p>
-        <p class="fa-brands fa-envelope"></p>
+      <!-- Social Media Button Links -->
+      <div class="footer__social-media text-color">
+        <div class="footer__social-media row">
+          <p
+            class="col-sm-4 fa-brands fa-square-linkedin col-sm-3 rounded-circle"
+          ></p>
+          <p class="col-sm-4 fa-brands fa-github col-sm-3 rounded-circle"></p>
+          <p class="col-sm-4 fa-brands fa-envelope col-sm-3 rounded-circle"></p>
+        </div>
       </div>
-      <p>website © Naomi Clyde</p>
+
+      <!--Credit-->
+      <div class="footer__website-credit">
+        <div class="row align-items-center text-color">
+          <p class="col-sm-4">website © Naomi Clyde</p>
+        </div>
+        <div class="row align-items-center text-color">
+          <p class="col-sm-4">Built with Bootstrap</p>
+        </div>
+      </div>
+
+      <!--Footer Link Menu Right-->
+      <div class="footer__menu-links">
+        <div class="row justify-content-end text-color">
+          <div class="col-sm-2">Navigation</div>
+          <div class="col-sm-2">Socials</div>
+          <div class="col-sm-2">Contact Info</div>
+        </div>
+        <div class="row justify-content-end text-color">
+          <div class="col-sm-2"><a href="/">Home</a></div>
+          <div class="col-sm-2">
+            <a href="https://www.linkedin.com/in/naomi-clyde/">Linkedin</a>
+          </div>
+          <div class="col-sm-2">
+            <a href="mailto:naomi.clyde52@gmail.com">Email</a>
+          </div>
+        </div>
+        <div class="row justify-content-end text-color">
+          <div class="col-sm-2"><a href="about.html">About</a></div>
+          <div class="col-sm-2">
+            <a href="https://github.com/naomi-clyde51">GitHub</a>
+          </div>
+          <div class="col-sm-2"><a href="contact.html">Contact Page</a></div>
+        </div>
+        <div class="row justify-content-end text-color">
+          <div class="col-sm-2"><a href="services.html">Services</a></div>
+          <div class="col-sm-2"><a href="/"></a></div>
+          <div class="col-sm-2"><a href="/"></a></div>
+        </div>
+        <div class="row justify-content-end text-color">
+          <div class="col-sm-2"><a href="resume.html">Resume</a></div>
+          <div class="col-sm-2"><a href="/"></a></div>
+          <div class="col-sm-2"><a href="/"></a></div>
+        </div>
+        <div class="row justify-content-end text-color">
+          <div class="col-sm-2"><a href="contact.html">Contact</a></div>
+          <div class="col-sm-2"><a href="/"></a></div>
+          <div class="col-sm-2"><a href="/"></a></div>
+        </div>
+        <div class="row justify-content-end text-color">
+          <!--<div class="col-sm-2"><a href="/">Sitemap</a></div>-->
+          <div class="col-sm-2"><a href="/"></a></div>
+          <div class="col-sm-2"><a href="/"></a></div>
+        </div>
+      </div>
+
+      <a href="#nav">
+        <button type="button" class="back-to-top-btn rounded-circle m-2 p-3">
+          ↑
+        </button>
+      </a>
     </footer>
   </body>
 </html>

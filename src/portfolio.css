@@ -49,6 +49,50 @@ h3 {
 }
 
 /* Animations */
+
+@keyframes slide-origin-left {
+    from {
+        transform: translateX(-1500px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slide-origin-right {
+    from {
+        transform: translateX(1500px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 41%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes ease-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* Nav */
 
 .nav-link {
@@ -95,21 +139,7 @@ header h2 {
     animation: typing 1.5s steps(17) forwards, blink 1s step-end infinite;
 }
 
-@keyframes typing {
-    from {
-        width: 0%;
-    }
 
-    to {
-        width: 36%;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
 
 .header__about {
     display: flex;
@@ -205,12 +235,18 @@ padding: 15px;
 }
 
 .contact-box-thankyou {
+    animation-name: slide-origin-left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
     margin-left: 40px;
 width: 408px;
 height: 291px;
 }
 
 .contact-box-form {
+    animation-name: slide-origin-right;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
     font-size: 36px;
     margin-left: 400px;
     max-width: 611px;
@@ -229,7 +265,7 @@ form {
 
 input, textarea {
     background-color: var(--background-color);
-    border: solid 1px var(--primary-color)
+    border: solid 1px var(--primary-color);
 }
 
 .submit {

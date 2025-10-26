@@ -44,9 +44,9 @@
       <li class="nav-item m-3">
         <a class="nav-link" href="/">Home</a>
       </li>
-      <li class="nav-item m-3">
+      <!--<li class="nav-item m-3">
         <a class="nav-link" href="about.html">About</a>
-      </li>
+      </li>-->
       <li class="nav-item m-3">
         <a class="nav-link" href="services.html">Services</a>
       </li>
@@ -132,7 +132,7 @@
                 </a>
               </div>
               <div class="col-6">
-                <p>
+                <p class="project-info">
                   This is a food landing page for chicken alfredo built and
                   designed with HTML, CSS, and Bootstrap.
                 </p>
@@ -143,7 +143,7 @@
             <!-- Web Project 2 -->
             <div class="row">
               <div class="col-6">
-                <p>
+                <p class="project-info">
                   This is a band multi-page fan site built and designed with
                   HTML, CSS, and Bootstrap.
                 </p>
@@ -194,7 +194,7 @@
                 </a>
               </div>
               <div class="col-6">
-                <p>
+                <p class="project-info">
                   This is a weather app page built and designed with HTML, CSS,
                   JavaScript, and API.
                 </p>
@@ -222,7 +222,7 @@
                 <h3 class="text-center">You Can Draw! Figures in Drapery</h3>
               </div>
               <div class="col-6">
-                <p>
+                <p class="project-info">
                   This is a mockup bookcover design designed with Adobe
                   Photoshop and Illustrator.
                 </p>
@@ -233,7 +233,7 @@
             <!--Illustration Project 2-->
             <div class="row">
               <div class="col-6">
-                <p>
+                <p class="project-info">
                   This is a mockup bus shelter ad design created using Adobe
                   Photoshop.
                 </p>
@@ -255,17 +255,92 @@
         </div>
       </div>
       <br /><br />
-      <section id="projects__contactCTA text-center m-5">
-        <div class="text-center">
-          <h2>Like what you see? Contact me</h2>
-          <a class="hide-underline homepg-contactbtn" href="contact.html"
-            >Contact me</a
-          >
-        </div>
-      </section>
+      <!-- CTA to Contact Me Pg -->
+        <section id="main__contactCTA text-center m-5">
+          <div class="main__contactCTA text-center">
+            <h2>Like what you see? Contact me</h2>
+            <a class="cta" href="contact.html">
+              <button type="button" class="btn btn-outline-custom btn-lg m-4">
+                Contact Me
+              </button>
+            </a>
+          </div>
+        </section>
     </main>
 
     <hr />
-    <footer><p>website © Naomi Clyde</p></footer>
+    <footer>
+      <!-- Social Media Button Links -->
+      <div class="footer__social-media text-color">
+        <div class="footer__social-media row">
+          <p
+            class="col-sm-4 fa-brands fa-square-linkedin col-sm-3 rounded-circle"
+          ></p>
+          <p class="col-sm-4 fa-brands fa-github col-sm-3 rounded-circle"></p>
+          <p class="col-sm-4 fa-brands fa-envelope col-sm-3 rounded-circle"></p>
+        </div>
+      </div>
+
+      <!--Credit-->
+      <div class="footer__website-credit">
+        <div class="row align-items-center text-color">
+          <p class="col-sm-4">website © Naomi Clyde</p>
+        </div>
+        <div class="row align-items-center text-color">
+          <p class="col-sm-4">Built with Bootstrap</p>
+        </div>
+      </div>
+
+      <!--Footer Link Menu Right-->
+      <div class="footer__menu-links">
+        <div class="row justify-content-end text-color">
+          <div class="col-sm-2">Navigation</div>
+          <div class="col-sm-2">Socials</div>
+          <div class="col-sm-2">Contact Info</div>
+        </div>
+        <div class="row justify-content-end text-color">
+          <div class="col-sm-2"><a href="/">Home</a></div>
+          <div class="col-sm-2">
+            <a href="https://www.linkedin.com/in/naomi-clyde/">Linkedin</a>
+          </div>
+          <div class="col-sm-2">
+            <a href="mailto:naomi.clyde52@gmail.com">Email</a>
+          </div>
+        </div>
+        <div class="row justify-content-end text-color">
+          <div class="col-sm-2"><a href="about.html">About</a></div>
+          <div class="col-sm-2">
+            <a href="https://github.com/naomi-clyde51">GitHub</a>
+          </div>
+          <div class="col-sm-2"><a href="contact.html">Contact Page</a></div>
+        </div>
+        <div class="row justify-content-end text-color">
+          <div class="col-sm-2"><a href="services.html">Services</a></div>
+          <div class="col-sm-2"><a href="/"></a></div>
+          <div class="col-sm-2"><a href="/"></a></div>
+        </div>
+        <div class="row justify-content-end text-color">
+          <div class="col-sm-2"><a href="resume.html">Resume</a></div>
+          <div class="col-sm-2"><a href="/"></a></div>
+          <div class="col-sm-2"><a href="/"></a></div>
+        </div>
+        <div class="row justify-content-end text-color">
+          <div class="col-sm-2"><a href="contact.html">Contact</a></div>
+          <div class="col-sm-2"><a href="/"></a></div>
+          <div class="col-sm-2"><a href="/"></a></div>
+        </div>
+        <div class="row justify-content-end text-color">
+          <!--<div class="col-sm-2"><a href="/">Sitemap</a></div>-->
+          <div class="col-sm-2"><a href="/"></a></div>
+          <div class="col-sm-2"><a href="/"></a></div>
+        </div>
+      </div>
+
+      <!--<a href="#nav">
+        <button type="button" class="back-to-top-btn rounded-circle m-2 p-3">
+          ↑
+        </button>
+      </a>-->
+    </footer>
   </body>
 </html>

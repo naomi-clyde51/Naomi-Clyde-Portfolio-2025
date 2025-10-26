@@ -48,6 +48,10 @@ h3 {
     font-size: 35px;
 }
 
+.project-info {
+    font-size: 18px;
+}
+
 /* Animations */
 
 @keyframes slide-origin-left {

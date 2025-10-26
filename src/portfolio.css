@@ -129,6 +129,12 @@ width: 13rem;
 
 .nav-link:hover {
     color:var(--text-color);
+    border: 3px solid var(--secondary-color);
+}
+
+.nav-link:active {
+    color: var(--text-color);
+        border: 3px solid var(--secondary-color);
 }
 
 /* Header + Hero */
@@ -175,8 +181,8 @@ main {
     padding: 20px;
 }
 
-a:hover {
-    border: 2px solid var(--secondary-color);
+a.nav-link:hover {
+    border: 3px solid var(--secondary-color);
 }
 
 .btn-outline-custom {
@@ -184,7 +190,9 @@ a:hover {
     border-color: var(--primary-color);
 }
 
-.cta:hover {
+.btn-outline-custom:hover {
+    color: var(--secondary-color);
+        border-color: var(--secondary-color);
     list-style-type: none;
 }
 
@@ -226,6 +234,10 @@ a:hover {
 }*/
 
 /* Services Page */
+
+.nav-link .active {
+    background-color: var(--primary-color);
+}
 
 
 /* Resume Page */
@@ -338,6 +350,14 @@ footer {
 background-color: #000;
 margin: 20px 0px 0px 0px;
 padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+color: var(--secondary-color);
 }
 
 footer p {

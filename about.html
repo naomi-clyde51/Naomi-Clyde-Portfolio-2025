@@ -35,50 +35,59 @@
     </style>
   </head>
   <body>
-    <ul
-      id="nav"
-      class="nav justify-content-center text-center text-wrap text-color"
-    >
-      <li class="nav-item m-3">
-        <a class="nav-link" href="/">Home</a>
-      </li>
-      <li class="nav-item m-3">
-        <a class="nav-link" href="about.html">About</a>
-      </li>
-      <li class="nav-item m-3">
-        <a class="nav-link" href="services.html">Services</a>
-      </li>
-      <li class="nav-item m-3">
-        <a class="nav-link" href="resume.html">Resume</a>
-      </li>
-      <li class="nav-item m-3">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
+    <nav class="container justify-content-center">
+      <div class="row">
+        <ul id="nav" class="nav text-center text-wrap text-color">
+          <div class="col-md-3">
+            <li class="nav-item m-3">
+              <a class="nav-link p-4 active" href="/">Home</a>
+            </li>
+          </div>
+          <!--<li class="nav-item m-3">
+        <a class="nav-link p-4" href="about.html">About</a>
+      </li>-->
+          <div class="col-md-3">
+            <li class="nav-item m-3">
+              <a class="nav-link p-4" href="services.html">Services</a>
+            </li>
+          </div>
+          <div class="col-md-3">
+            <li class="nav-item m-3">
+              <a class="nav-link p-4" href="resume.html">Resume</a>
+            </li>
+          </div>
+          <div class="col-md-3">
+            <li class="nav-item m-3">
+              <a class="nav-link p-4" href="contact.html">Contact</a>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </nav>
     <header class="header__about">
       <!-- Hero Section -->
-       <img src="" alt="Image of Naomi Clyde" width="">
-       <div class="header__info">
-       <h1>Artistic & Investigative</h1>
-       <p>
-         I create things to satisfy my desire to solve
-        problems and understand what makes things work successfully. I find
-        pleasure in researching how design influences human psychology and
-        drives human intuition. With each creative project I make, I demonstrate
-        how solutions can be unveiled in both ingenious and logical ways. I find
-        value in being a jack of all trades while being a master of one. I
-        strongly believe that, no matter what tool is being used to create
-        something, being a master of the fundamentals of said tool is important
-        in expanding one’s horizons. I’m always eager to learn new tools of the
-        trade to expand my abilities while going back to review the foundations
-        of the concept. Growing up, I was influenced by an era of 3D animation
-        and other digital creations. The accessibility and conveniences of
-        digital software and online resources allowed the basic functionalities
-        to be ingrained into my mind. It got to the point where figuring out how
-        to make actions happen became second nature. I believe that it’s
-        important to have a basic understanding and embrace the rapidly emerging
-        digital era.
-      </p>
+      <img src="" alt="Image of Naomi Clyde" width="" />
+      <div class="header__info">
+        <h1>Artistic & Investigative</h1>
+        <p>
+          I create things to satisfy my desire to solve problems and understand
+          what makes things work successfully. I find pleasure in researching
+          how design influences human psychology and drives human intuition.
+          With each creative project I make, I demonstrate how solutions can be
+          unveiled in both ingenious and logical ways. I find value in being a
+          jack of all trades while being a master of one. I strongly believe
+          that, no matter what tool is being used to create something, being a
+          master of the fundamentals of said tool is important in expanding
+          one’s horizons. I’m always eager to learn new tools of the trade to
+          expand my abilities while going back to review the foundations of the
+          concept. Growing up, I was influenced by an era of 3D animation and
+          other digital creations. The accessibility and conveniences of digital
+          software and online resources allowed the basic functionalities to be
+          ingrained into my mind. It got to the point where figuring out how to
+          make actions happen became second nature. I believe that it’s
+          important to have a basic understanding and embrace the rapidly
+          emerging digital era.
+        </p>
       </div>
     </header>
     <main>
@@ -158,11 +167,89 @@
         </p>
       </div>
       <!-- CTA to Projects Pg -->
-       <a class="cta" href="services.html">My projects</a>
+      <a class="cta" href="services.html">My projects</a>
     </main>
     <hr />
     <footer>
-      <p>website © Naomi Clyde</p>
+      <!-- Social Media Button Links -->
+      <!--<div class="footer__social-media text-color">
+        <div class="footer__social-media row">
+          <p
+            class="col-sm-4 fa-brands fa-square-linkedin col-sm-3 rounded-circle"
+          ></p>
+          <p class="col-sm-4 fa-brands fa-github col-sm-3 rounded-circle"></p>
+          <p class="col-sm-4 fa-brands fa-envelope col-sm-3 rounded-circle"></p>
+        </div>
+      </div>-->
+
+      <!--Credit-->
+      <div class="container">
+        <div class="row">
+          <div
+            class="footer__website-credit col-md-6 justify-content-end align-items-center text-color"
+          >
+            <div class="row">
+              <p>website © Naomi Clyde</p>
+            </div>
+            <div class="row">
+              <p>Built with Bootstrap</p>
+            </div>
+          </div>
+
+          <!--Footer Link Menu Right-->
+          <div class="footer__menu-links col-md-6">
+            <div class="row justify-content-end d-flex text-color">
+              <div class="col-lg-3 m-2 p-2">
+                Navigation
+                <div class="footer-link">
+                  <a class="footer-link" href="/">Home</a>
+                </div>
+                <div class="footer-link">
+                  <a class="footer-link" href="services.html">Services</a>
+                </div>
+                <div class="footer-link">
+                  <a class="footer-link" href="resume.html">Resume</a>
+                </div>
+                <div class="footer-link">
+                  <a class="footer-link" href="contact.html">Contact</a>
+                </div>
+              </div>
+              <div class="col-lg-3 m-2 p-2">
+                Social
+                <div>
+                  <a
+                    class="footer-link"
+                    href="https://www.linkedin.com/in/naomi-clyde/"
+                    >Linkedin</a
+                  >
+                </div>
+                <div>
+                  <a class="footer-link" href="https://github.com/naomi-clyde51"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+              <div class="col-lg-3 m-2 p-2">
+                Contact
+                <div>
+                  <a class="footer-link" href="mailto:naomi.clyde52@gmail.com"
+                    >Email</a
+                  >
+                </div>
+                <div>
+                  <a class="footer-link" href="contact.html">Contact Page</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--<a href="#nav">
+        <button type="button" class="back-to-top-btn rounded-circle m-2 p-3">
+          ↑
+        </button>
+      </a>-->
     </footer>
   </body>
 </html>

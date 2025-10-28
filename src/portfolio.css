@@ -354,9 +354,10 @@ padding: 20px;
 
 footer .footer-link {
     text-decoration: none;
+    color: var(--primary-color);
 }
 
-footer a:hover {
+footer .footer-link:hover {
 color: var(--secondary-color);
 }
 
@@ -410,7 +411,8 @@ color: var(--secondary-color);
     }
 
     footer {
-        margin: 20px 0px 0px 0px;
-        padding: 20px;
+        font-size:18px;
+        display: flex;
+        justify-content: center;
             }
 }
